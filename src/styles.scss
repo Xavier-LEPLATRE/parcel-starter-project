@@ -1,0 +1,32 @@
+@use '/src/styles/reset';
+@use '/src/styles/vars';
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    padding: 2em;
+    background-color: vars.$primary-color;
+    font-family: vars.$global-font;
+    color: vars.$dark-color;
+
+    h1, h2, h3, h4 {
+        font-family: vars.$title-font;
+    }
+
+    &-title {
+        font-size: vars.$font-size * 3;
+        margin-bottom: vars.$gutter;
+    }
+
+    &-description {
+        font-size: vars.$font-size * 1.5;
+
+        a {
+            color: vars.$alt-color;
+        }
+    }
+}
+
