@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
-.app {
+body {
     height: 100vh;
     padding: 2em;
     background-color: vars.$primary-color;
+}
+
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: vars.$global-font;
     color: vars.$dark-color;
 
@@ -17,12 +25,15 @@
     }
 
     &-title {
-        font-size: vars.$font-size * 3;
+        font-size: vars.$font-size * 4;
         margin-bottom: vars.$gutter;
+        text-align: center;
     }
 
     &-description {
         font-size: vars.$font-size * 1.5;
+        text-align: center;
+        line-height: 1.2;
 
         a {
             color: vars.$alt-color;
